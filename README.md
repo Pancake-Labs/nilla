@@ -4,8 +4,14 @@
 
 Nilla is a lightweight LESS/CSS framework based on Flexbox.
 
-### NPM
+### Install
 
 ```
 npm install nilla
+```
+
+Using Webpack, place the following in your app's main less file:
+
+```
+@import "~nilla/less/nilla";
 ```

@@ -1,13 +1,13 @@
 {
   "name": "nilla",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nilla is a LESS/CSS framework based on Flexbox.",
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run less && npm run less-min",
     "clean": "rm -rf css",
-    "less": "lessc --source-map less/main.less css/nill.css",
-    "less-min": "lessc -x --source-map less/main.less css/nill.min.css"
+    "less": "lessc --source-map less/nilla.less css/nill.css",
+    "less-min": "lessc -x --source-map less/nilla.less css/nill.min.css"
   },
   "repository": {
     "type": "git",
