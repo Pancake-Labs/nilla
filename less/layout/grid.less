@@ -1,0 +1,38 @@
+
+.columns {
+  .flex-row;
+  .flex-fill;
+  margin-left: -@spacing-small;
+  margin-right: -@spacing-small;
+
+  .column {
+    .flex;
+    .flex-column;
+    .flex-fill;
+    margin: @spacing-small;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.is-half {
+  max-width: 50%;
+  min-width: 50%;
+}
+
+.is-third {
+  max-width: 33%;
+  min-width: 33%;
+}
+
+.is-quarter {
+  max-width: 25%;
+  min-width: 25%;
+}
+
+.is-fifth {
+  max-width: 20%;
+  min-width: 20%;
+}

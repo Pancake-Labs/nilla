@@ -1,0 +1,40 @@
+
+@tab-height: 50px;
+
+.tabs {
+  .flex-column;
+  border-bottom: 1px solid @light-gray;
+  margin-bottom: @spacing;
+
+  > ul {
+    display: inline-flex;
+  }
+}
+
+.tab {
+  .flex;
+  font-size: @font-size-medium;
+  height: @tab-height;
+  line-height: @tab-height;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > a {
+    border-bottom: 1px solid transparent;
+    color: @dark-gray;
+    margin: 0 @spacing 0 0;
+    margin-bottom: -1px;
+
+    &:hover {
+      border-bottom: 1px solid @green;
+      color: @off-black;
+      text-decoration: none;
+    }
+  }
+
+  &.selected > a {
+    border-bottom: 4px solid @green;
+    color: @green;
+  }
+}

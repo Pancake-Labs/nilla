@@ -1,0 +1,45 @@
+
+.modal {
+  .flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: @z-index-modal;
+
+  .modal-background {
+    background: @modal-background;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .modal-box {
+    animation-name: slideModalUp;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: @ease-smooth;
+    animation-duration: 350ms;
+    background: @off-white;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px @shadow;
+    max-height: 65%;
+    min-height: 380px; /* About the size of a recipe details box */
+    overflow-y: auto;
+    padding: @spacing-large;
+    position: relative;
+    transform: translateY(2%);
+    z-index: 2;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

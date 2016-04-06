@@ -1,0 +1,36 @@
+
+@breakpoint-mobile: ~'screen and (max-width: 768px)';
+@breakpoint-small: ~'only screen and (min-width: 768px) and (max-width: 980px)';
+@breakpoint-standard: ~'only screen and (min-width: 980px) and (max-width: 1200px)';
+@breakpoint-large: ~'only screen and (min-width: 1200px) and (max-width: 1500px)';
+@breakpoint-huge: ~'only screen and (min-width: 1500px)';
+
+@media @breakpoint-huge {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media @breakpoint-large {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media @breakpoint-standard {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media @breakpoint-small {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media @breakpoint-mobile {
+  .container {
+    width: 768px;
+  }
+}

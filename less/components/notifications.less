@@ -1,0 +1,55 @@
+
+.notification {
+  .flex-row-vcenter;
+  .is-padded;
+  .separate-bottom;
+  border: 2px solid @bright-green;
+  background: @white;
+  border-radius: 4px;
+  position: relative;
+
+  .button {
+    background: @light-shadow;
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    margin: -2px -2px 0 0;
+    padding: @spacing-small;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .icon {
+    fill: @light-green;
+    margin-right: @spacing-small;
+  }
+
+  &.is-success {
+    background: @light-green;
+    border: 2px solid @green;
+    color: @white;
+
+    .icon {
+      fill: @white;
+    }
+  }
+
+  &.is-warning {
+    background: lighten(@yellow, 10%);
+    border: 2px solid @gold; // SOLID GOLD BABY!!!
+
+    .icon {
+      fill: @gold;
+    }
+  }
+
+  &.is-danger {
+    background: @red;
+    border: 2px solid darken(@red, 10%);
+    color: @white;
+
+    .icon {
+      fill: @white;
+    }
+  }
+}

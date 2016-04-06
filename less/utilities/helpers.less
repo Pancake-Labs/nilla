@@ -1,0 +1,62 @@
+
+.is-white {
+  background: @white;
+}
+
+.is-off-white {
+  background: @off-white;
+}
+
+.is-off-black {
+  background: @white;
+  color: @white;
+}
+
+.is-green {
+  background: @green;
+  color: @white;
+}
+
+.is-subdued {
+  color: @medium-gray;
+
+  a {
+    color: @medium-gray;
+    font-family: @font-family-bold;
+  }
+}
+
+.is-padded {
+  padding: @spacing;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-right {
+  margin-left: auto;
+}
+
+.separate-bottom {
+  margin-bottom: @spacing;
+}
+
+.separate-top {
+  margin-top: @spacing;
+}
+
+.separate {
+  .separate-bottom;
+  .separate-top;
+}
+
+.no-appearance {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}

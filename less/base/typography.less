@@ -1,0 +1,52 @@
+
+a,
+a:active,
+a:visited {
+  color: @green;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: @light-green;
+    text-decoration: underline;
+  }
+
+  svg {
+    fill: @green;
+    margin: 0 @spacing-xsmall;
+  }
+}
+
+b, em, strong {
+  font-family: @font-family-bold;
+}
+
+h1, h2, h3, h4, h5, .title {
+  display: block;
+
+  &.is-bordered {
+    border-bottom: 1px solid @light-gray;
+    padding-bottom: @spacing-xsmall;
+  }
+}
+
+h1 {
+  font-size: @font-size-xxlarge;
+}
+
+h2,
+.title {
+  font-size: @font-size-xlarge;
+}
+
+h3 {
+  font-size: @font-size-large;
+}
+
+h4 {
+  font-size: @font-size;
+}
+
+h5 {
+  font-size: @font-size-medium;
+}

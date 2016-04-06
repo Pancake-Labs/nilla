@@ -1,0 +1,31 @@
+{
+  "name": "nilla",
+  "version": "1.0.0",
+  "description": "Nilla is a LESS/CSS framework based on Flexbox.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run less && npm run less-min",
+    "clean": "rm -rf css",
+    "less": "lessc --source-map less/main.less css/nill.css",
+    "less-min": "lessc -x --source-map less/main.less css/nill.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pancake-Labs/nilla.git"
+  },
+  "keywords": [
+    "less",
+    "css",
+    "framework",
+    "flexbox"
+  ],
+  "author": "Narthalameu Redurpula AKA Pancake Chewey The Fifth <systemride@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pancake-Labs/nilla/issues"
+  },
+  "homepage": "https://github.com/Pancake-Labs/nilla#readme",
+  "devDependencies": {
+    "less": "^2.6.1"
+  }
+}
