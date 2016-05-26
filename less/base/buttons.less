@@ -56,8 +56,8 @@
   }
 
   &.is-primary {
-    background: @light-green;
-    border: 1px solid @light-green;
+    background: @primary-highlight;
+    border: 1px solid @primary-highlight;
     color: @white;
 
     > svg {
@@ -65,26 +65,26 @@
     }
 
     &:hover {
-      background: darken(@light-green, 5%);
-      border: 1px solid darken(@light-green, 5%);
+      background: darken(@primary-highlight, 5%);
+      border: 1px solid darken(@primary-highlight, 5%);
     }
   }
 
   &.is-clear {
     background: transparent;
     border: 0 !important;
-    color: @green;
+    color: @primary;
     height: auto;
     padding: 4px 0;
 
     > svg {
-      fill: @green;
+      fill: @primary;
     }
 
     &:hover {
       background: transparent;
       border: 0 !important;
-      color: @light-green;
+      color: @primary-highlight;
     }
 
     &:active {
@@ -154,7 +154,7 @@
       animation: pulse 500ms linear infinite;
       border: 2px solid;
       border-bottom: 0;
-      border-color: @green transparent transparent transparent;
+      border-color: @primary transparent transparent transparent;
       border-left: 0;
       height: 16px;
       margin: -8px 0 0 -8px;
