@@ -75,6 +75,22 @@
     }
   }
 
+  &.is-punch {
+    background: @punch-highlight;
+    border: 1px solid @punch-highlight;
+    color: @white;
+
+    > svg {
+      fill: @white;
+    }
+
+    &:hover {
+      background: darken(@punch-highlight, 5%);
+      border: 1px solid darken(@punch-highlight, 5%);
+      color: @white;
+    }
+  }
+
   &.is-clear {
     background: transparent;
     border: 0 !important;
