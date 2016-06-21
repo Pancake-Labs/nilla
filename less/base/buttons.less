@@ -133,20 +133,24 @@
     }
   }
 
-  &.is-disabled {
-    color: @light-gray;
+  &.is-disabled,
+  &:disabled {
+    background: @light-gray;
+    border: 1px solid @light-gray;
+    color: @gray;
     cursor: default;
 
     svg {
-      fill: @light-gray;
+      fill: @gray;
     }
 
     &:hover {
+      background: @light-gray;
       border: 1px solid @light-gray;
-      color: @light-gray;
+      color: @gray;
 
       svg {
-        fill: @light-gray;
+        fill: @gray;
       }
     }
 
