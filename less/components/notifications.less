@@ -1,6 +1,5 @@
 
 .notification {
-  .flex-row-vcenter;
   .is-padded;
   .separate-bottom;
   border: 2px solid @bright-green;
@@ -19,9 +18,17 @@
     top: 0;
   }
 
+  > h3 {
+    margin: -@spacing-xsmall 0 @spacing-xsmall;
+  }
+
   .icon {
     fill: @light-green;
     margin-right: @spacing-small;
+  }
+
+  &.row {
+    .flex-row-vcenter;
   }
 
   &.is-success {
