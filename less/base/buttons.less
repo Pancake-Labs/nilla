@@ -77,6 +77,18 @@
       border: 1px solid darken(@primary-highlight, 5%);
       color: @white;
     }
+
+    &.is-bordered {
+      background: @white;
+      border: 2px solid @primary-highlight;
+      color: @primary-highlight;
+
+      &:hover {
+        background: @white;
+        border: 2px solid darken(@primary-highlight, 5%);
+        color: darken(@primary-highlight, 5%);
+      }
+    }
   }
 
   &.is-punch {
@@ -92,6 +104,18 @@
       background: @punch-highlight;
       border: 1px solid @punch-highlight;
       color: @white;
+    }
+
+    &.is-bordered {
+      background: @white;
+      border: 2px solid @punch;
+      color: @punch;
+
+      &:hover {
+        background: @white;
+        border: 2px solid darken(@punch, 5%);
+        color: darken(@punch, 5%);
+      }
     }
   }
 
@@ -129,6 +153,18 @@
 
       svg {
         fill: @medium-gray;
+      }
+    }
+
+    &.is-bordered {
+      background: @white;
+      border: 2px solid @gray;
+      color: @gray;
+
+      &:hover {
+        background: @white;
+        border: 2px solid @medium-gray;
+        color: @medium-gray;
       }
     }
   }
