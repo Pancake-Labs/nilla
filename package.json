@@ -1,6 +1,6 @@
 {
   "name": "nilla",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Nilla is a LESS/CSS framework based on Flexbox.",
   "main": "index.js",
   "scripts": {
